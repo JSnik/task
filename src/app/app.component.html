@@ -1,0 +1,211 @@
+<div class="main">
+  <div class="wrapper">
+    <div class="container">
+      <app-header></app-header>
+      <div class="cashback">
+        <img src="../assets/img/cashback.png" alt="" fill="">
+      </div>
+      <div class="offers-section">
+        <div class="banner-transparent">
+          <div class="absolute">
+            <div class="aligner">
+              <div class="flex">
+                <div class="element">
+                  <img src="../assets/img/offer-1.png" alt="">
+                  <div class="text">
+                    <div class="icon">
+                      <img src="../assets/img/offer1-img.png" alt="">
+                    </div>
+                    <div class="text-title">
+                      <ng-container *ngIf="getLang() === 'geo'">
+                        <span>დაატრიალე ნებისმიერი სლოტი</span>
+                      </ng-container>
+                      <ng-container *ngIf="getLang() === 'usa'">
+                        <span>Lorem ipsum dolor sit.</span>
+                      </ng-container>
+                    </div>
+                  </div>
+                </div>
+                <div class="element">
+                  <img src="../assets/img/offer-2.png" alt="">
+                  <div class="text">
+                    <div class="icon">
+                      <img src="../assets/img/offer2-img.png" alt="">
+                    </div>
+                    <div class="text-title">
+                      <ng-container *ngIf="getLang() === 'geo'">
+                        <span>გაზარდე შენი ქეშბექი 40%-მდე</span>
+                      </ng-container>
+                      <ng-container *ngIf="getLang() === 'usa'">
+                        <span>Lorem ipsum dolor sit amet.</span>
+                      </ng-container>
+                    </div>
+                  </div>
+                </div>
+                <div class="element">
+                  <img src="../assets/img/offer-3.png" alt="">
+                  <div class="text">
+                    <div class="icon">
+                      <img src="../assets/img/offer3-img.png" alt="">
+                    </div>
+                    <div class="text-title">
+                      <ng-container *ngIf="getLang() === 'geo'">
+                        <span>დაიბრუნე თანხა ყოველდღე</span>
+                      </ng-container>
+                      <ng-container *ngIf="getLang() === 'usa'">
+                        <span>Lorem ipsum dolor sit amet.</span>
+                      </ng-container>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="play-and-slider">
+        <div class="top">
+          <app-button></app-button>
+        </div>
+        <div class="slider">
+          <app-slider></app-slider>
+        </div>
+      </div>
+      <div class="play">
+        <app-button></app-button>
+      </div>
+      <div class="last-banner">
+        <img src="../assets/img/last-banner.png" alt="">
+        <div class="bg">
+          <div class="title">
+            <h3 *ngIf="getLang() === 'geo'">
+              მიიღე <span class="orange-color">გარანტირებული 10%</span> - იანი ქეშბექი და გაზარდე 1%-ით ყოველდღე
+            </h3>
+            <h3 *ngIf="getLang() === 'usa'">
+              get <span class="orange-color">dsfsfdsf</span> sdfsdfsdfd fdjgiuitoruitou
+            </h3>
+          </div>
+          <div class="boxes">
+            <div class="left">
+              <div class="box">
+                <div class="column-flex">
+                  <div class="top-box">
+                    <ng-container *ngIf="getLang() === 'geo'">
+                      <span>ყოველდღე  დატრიალებული</span>
+                    </ng-container>
+                    <ng-container *ngIf="getLang() === 'usa'">
+                      <span>Lorem ipsum dolor.</span>
+                    </ng-container>
+                  </div>
+                  <div class="bottom-box">
+                    <span>250₾</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="equal">
+              <span> = </span>
+            </div>
+            <div class="right">
+              <div class="box">
+                <div class="column-flex">
+                  <div class="top-box">
+                    <span>+1%</span>
+                  </div>
+                  <div class="bottom-box">
+                    <ng-container *ngIf="getLang() === 'geo'">
+                      <span>ქეშბექი</span>
+                    </ng-container>
+                    <ng-container *ngIf="getLang() === 'usa'">
+                      <span>cashback</span>
+                    </ng-container>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="attention">
+          <div class="left">
+            <img src="../assets/img/attention.png" alt="">
+          </div>
+          <div class="right">
+            <ng-container *ngIf="getLang() === 'geo'">
+              <div class="top">
+                <p>
+                  წარმატებისა თუ წარუმატებლობის მიუხედავად, კალენდარული დღის განმ
+                  წარმატებისა თუ წარუმატებლობის მიუხედავად, კალენდარული დღის განმ
+                </p>
+              </div>
+              <div class="bottom">
+                <p>თუ მოთამაშე დღის განმავლობაში არ გაათამაშებს ჯამში 250₾-ს მისი
+                  თუ მოთამაშე დღის განმავლობაში არ გაათამაშებს ჯამში 250₾-ს მისი </p>
+              </div>
+            </ng-container>
+            <ng-container *ngIf="getLang() === 'usa'">
+              <div class="top">
+                <p>
+                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex, tenetur?
+                </p>
+              </div>
+              <div class="bottom">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, amet!</p>
+              </div>
+            </ng-container>
+          </div>
+        </div>
+      </div>
+      <div class="play play-last">
+        <app-button></app-button>
+      </div>
+      <div class="accordion" (click)="activeAcc(0.)">
+        <div class="title">
+          <div class="txt">
+            <h4>რა არის EGT freespins?</h4>
+          </div>
+          <div class="icon" *ngIf="!accIsOpened">
+            <img src="../assets/img/arrow-up.png" alt="">
+          </div>
+          <div class="icon" *ngIf="accIsOpened">
+            <img src="../assets/img/arrow-down.png" alt="">
+          </div>
+        </div>
+        <div class="content" *ngIf="accIsOpened">
+           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero neque quasi voluptatem! Accusantium, ad aliquam architecto aspernatur dolor enim facere magnam minus necessitatibus nesciunt nulla, obcaecati sapiente vel velit veniam?</p>
+        </div>
+      </div>
+      <div class="accordion" (click)="activeAcc(1)" >
+        <div class="title">
+          <div class="txt">
+            <h4>რა არის EGT freespins?</h4>
+          </div>
+          <div class="icon" *ngIf="!accIsOpenedSecond">
+            <img src="../assets/img/arrow-up.png" alt="">
+          </div>
+          <div class="icon" *ngIf="accIsOpenedSecond">
+            <img src="../assets/img/arrow-down.png" alt="">
+          </div>
+        </div>
+        <div class="content" *ngIf="accIsOpenedSecond">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero neque quasi voluptatem! Accusantium, ad aliquam architecto aspernatur dolor enim facere magnam minus necessitatibus nesciunt nulla, obcaecati sapiente vel velit veniam?</p>
+        </div>
+      </div>
+      <div class="accordion last-b-0" (click)="activeAcc(2)">
+        <div class="title">
+          <div class="txt">
+            <h4>რა არის EGT freespins?</h4>
+          </div>
+          <div class="icon" *ngIf="!accIsOpenedThird">
+            <img src="../assets/img/arrow-up.png" alt="">
+          </div>
+          <div class="icon" *ngIf="accIsOpenedThird">
+            <img src="../assets/img/arrow-down.png" alt="">
+          </div>
+        </div>
+        <div class="content" *ngIf="accIsOpenedThird">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero neque quasi voluptatem! Accusantium, ad aliquam architecto aspernatur dolor enim facere magnam minus necessitatibus nesciunt nulla, obcaecati sapiente vel velit veniam?</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

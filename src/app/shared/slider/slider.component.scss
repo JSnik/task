@@ -1,0 +1,35 @@
+.main {
+  .slider {
+    padding: 0px 150px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .boxes {
+      display: flex;
+      .prev {
+        margin-top: 74px;
+        cursor: pointer;
+        margin-right: -48px;
+        z-index: 99999999999999999;
+        img {
+          cursor: pointer;
+        }
+      }
+      .next {
+        margin-top: 74px;
+        cursor: pointer;
+        margin-left: -56px;
+        z-index: 99999999999999999;
+        img {
+          cursor: pointer;
+
+        }
+      }
+    }
+  }
+  .slider-bottom {
+    display: flex;
+    justify-content: center;
+    margin-top: -103px;
+  }
+}

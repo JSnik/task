@@ -1,0 +1,51 @@
+/* You can add global styles to this file, and also import other style files */
+*{
+  padding: 0px;
+  margin: 0px;
+}
+
+button {
+  outline: none;
+  border: none;
+}
+
+@font-face {
+  font-family: regular-font;
+  src: url('assets/fonts/bpg_arial_2009.ttf') format('woff');
+}
+@font-face {
+  font-family: bold-font;
+  src: url('assets/fonts/bpg_nino_mtavruli_bold.ttf') format('woff');
+}
+button {
+  font-family: bold-font;
+  font-size: 26pt;
+  a {
+    font-family: bold-font;
+    font-size: 26pt;
+    text-decoration: none;
+    color: white;
+  }
+}
+
+span {
+  font-family: bold-font;
+}
+h3 {
+  font-family: bold-font;
+}
+h4 {
+  font-family: regular-font;
+  font-size: 24pt;
+}
+p {
+  font-family: regular-font;
+  font-size: 24pt;
+}
+h1,h2,h3,h4,h5,h6 {
+  margin: 0px;
+}
+.orange-color {
+  color: #fdb936;
+  font-family: bold-font;
+}

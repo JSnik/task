@@ -1,0 +1,21 @@
+header {
+  padding-top:10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  svg {
+    cursor: pointer;
+  }
+}
+.fixed {
+  position: fixed;
+  z-index: 99999999999999999999999999999999999999999999;
+
+}
+.navbar {
+  margin-bottom: 50px;
+}
+.navbar-inverse{
+  padding: 10px 0px 20px 0px;
+  background: black;
+}

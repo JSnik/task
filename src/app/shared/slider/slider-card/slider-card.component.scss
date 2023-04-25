@@ -1,0 +1,118 @@
+.slider-card {
+  position: relative;
+  .main-img {
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    bottom: 0px;
+  }
+  .top-title {
+    height: 54px;
+    width: 180px;
+    background: #fff;
+    border-radius: 27px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 999;
+    top: -26px;
+    position: absolute;
+    h4 {
+      color: #000000;
+    }
+  }
+  .percentage {
+    height: 58px;
+    width: 120px;
+    border-radius: 5px;
+    background: #2b1251;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 50%;
+    top: 100px;
+    transform: translate(-50%, -50%);
+    z-index: 9999999;
+    color: #ffffff;
+    span {
+      font-size: 30pt;
+      margin-top: 9px;
+    }
+  }
+  .win-lose {
+    display: flex;
+    align-items: center;
+    right: 108px;
+    top: 105px;
+    z-index: 99999999;
+    position: absolute;
+    .win {
+      margin-right: 15px;
+    }
+  }
+  .progress-indicator {
+    display: flex;
+    align-items: center;
+    top: 182px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    span {
+      color: #a397e2;
+      font-size: 13pt;
+    }
+    .left {
+      margin-right: 5px;
+    }
+    .right {
+      margin-left: 5px;
+    }
+    .progress-bar {
+      width: 220px;
+      height: 16px;
+      .txt-indicator {
+        position: absolute;
+        top: -23px;
+        left: 5px;
+        right: 50px;
+        .alig {
+          position: relative;
+        }
+        span {
+          font-size:12pt;
+          color: black;
+          position: absolute;
+          left: 50%;
+          transform: translateX(-50%)
+        }
+      }
+      .progress-bar-outer {
+        background: #241662;
+        border: 1px solid #624dce;
+        border-radius: 8px;
+        width: 220px;
+        height: 16px;
+        position: relative;
+        padding: 3px 4px;
+        .progress-bar-inner {
+          position: absolute;
+          left: 5px;
+          right: 50px;
+          top: 3px;
+          background: #1cbc2b;
+          z-index: 99999999999999999999999999999999999999990000000;
+          height: 8px;
+          border-radius: 8px;
+        }
+      }
+    }
+  }
+}
+.main {
+  width: 466px;
+  height: 277px;
+}
