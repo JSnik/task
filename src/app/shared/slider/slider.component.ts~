@@ -1,11 +1,11 @@
-import {Component, DoCheck, HostListener, OnInit, ViewChild} from '@angular/core';
+import {Component, DoCheck, HostListener, ViewChild} from '@angular/core';
 
 @Component({
   selector: 'app-slider',
   templateUrl: './slider.component.html',
   styleUrls: ['./slider.component.scss']
 })
-export class SliderComponent implements OnInit{
+export class SliderComponent implements DoCheck{
     @HostListener('window:resize', ['$event'])
     onResize() {
         console.log(window.innerWidth)
@@ -13,11 +13,10 @@ export class SliderComponent implements OnInit{
             this.slide  = -547;
         }
     }
-
-    ngOnInit() {
-        if (window.innerWidth < 691) {
-            this.slide = -547;
-        }
+    ngDoCheck() {
+        // if (window.innerWidth < 691) {
+        //     this.slide  = -547;
+        // }
     }
 
     disNext: boolean = false;
@@ -25,9 +24,10 @@ export class SliderComponent implements OnInit{
     slide: number = -304;
     next() {
         this.slide += -466;
+
     }
 
     prev() {
-            this.slide += +466;
+            this.slide += +46;
     }
 }

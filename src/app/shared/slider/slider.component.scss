@@ -6,6 +6,35 @@
     align-items: center;
     .boxes {
       display: flex;
+      width: 790px;
+      height: 350px;
+      align-items: end;
+      overflow: hidden;
+      position: absolute;
+      left: 0px;
+      right: 0px;
+      margin: auto;
+      .arrows {
+        display: flex;
+        position: absolute;
+        width: 500px;
+        left: 50%;
+        transform: translateX(-50%);
+        justify-content: space-between;
+        align-items: self-start;
+        top: 76px;
+        z-index: 999999999999999999999999;
+        .disable {
+          opacity: 0.5;
+          cursor: unset;
+          pointer-events: none;
+        }
+      }
+      .item {
+        display: flex;
+        transition: opacity 0.3s, transform 0.3s, filter 0.3s;
+        //-770
+      }
       .prev {
         margin-top: 74px;
         cursor: pointer;
@@ -31,5 +60,100 @@
     display: flex;
     justify-content: center;
     margin-top: -103px;
+  }
+}
+@media (max-width: 1200px) {
+  .main {
+    .slider {
+      .boxes {
+        width: 490px;
+      }
+    }
+  }
+}
+
+@media (max-width: 991px) {
+  .main {
+    .slider {
+      padding: 0px;
+      .slider-bottom {
+
+      }
+    }
+  }
+  .slider-bottom {
+    margin-top: -75px !important;
+  }
+  .main-img {
+    width: 100%;
+  }
+}
+.d-blocks {
+  display: block !important;
+}
+.d-nones {
+  display: none !important;
+}
+@media(max-width: 691px) {
+  .d-nones {
+    display: block !important;
+  }
+  .d-blocks {
+    display: none !important;
+
+
+  }
+  .main {
+    .slider {
+      .boxes {
+        width: 300px;
+        .item {
+          //transform:translateX(-547px) !important;
+        }
+        .arrows {
+          top: unset  ;
+          width: 0px;
+          left: 29%;
+          .next {
+            margin: 0px;
+          }
+          .prev {
+            margin: 0px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media(max-width: 600px) {
+  .slider-bottom {
+    margin-top: -57px !important;
+  }
+
+}
+
+@media(max-width: 500px) {
+  .slider {
+    //.left-end {
+    //  margin-left: -30px;
+    //}
+    //.right-end {
+    //  margin-right: -30px;
+    //}
+  }
+  .right-end {
+    position: absolute;
+    right: -26px;
+  }
+  .left-end {
+    margin-left: -35px;
+  }
+  .main {
+    .slider {
+      .boxes {
+        z-index: 999;
+      }
+    }
   }
 }

@@ -1,4 +1,4 @@
-import {Component, OnInit} from '@angular/core';
+import {Component, HostListener, OnInit} from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -9,6 +9,7 @@ export class AppComponent implements OnInit{
   accIsOpened: boolean = false;
   accIsOpenedSecond: boolean = false;
   accIsOpenedThird: boolean = false;
+
   activeAcc(i: number) {
     if (i === 0) {
       this.accIsOpened = !this.accIsOpened;
@@ -20,7 +21,7 @@ export class AppComponent implements OnInit{
   }
 
   ngOnInit() {
-    if (localStorage.getItem('lang')) {
+    if (!localStorage.getItem('lang')) {
       localStorage.setItem('lang', 'geo')
     }
   }

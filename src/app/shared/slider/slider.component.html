@@ -34,16 +34,21 @@
       </svg>
     </div>
     <div class="boxes">
-      <div class="prev">
-        <img src="../../assets/img/arrow-prev.png" alt="">
+      <div class="arrows">
+        <div class="prev" (click)="prev()" [class.disable]="slide === 162">
+          <img src="../../assets/img/arrow-prev.png" alt="">
+        </div>
+        <div class="next" (click)="next()" [class.disable]="slide === -2168">
+          <img src="../../assets/img/arrow-next.png" alt="">
+        </div>
       </div>
-      <div class="item">
+      <div class="item" [ngStyle]="{'transform': 'translateX(' + slide + 'px)'}">
         <app-slider-card></app-slider-card>
-<!--        <app-slider-card></app-slider-card>-->
-<!--        <app-slider-card></app-slider-card>-->
-      </div>
-      <div class="next">
-        <img src="../../assets/img/arrow-next.png" alt="">
+        <app-slider-card></app-slider-card>
+        <app-slider-card></app-slider-card>
+        <app-slider-card></app-slider-card>
+        <app-slider-card></app-slider-card>
+        <app-slider-card></app-slider-card>
       </div>
     </div>
     <div class="right-end">
